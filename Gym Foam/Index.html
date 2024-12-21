@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AM GYM</title>
+    <style>
+        /* Global Reset and Body Styling */
+        body {
+            color: white;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: url('pexels-photo-9361335.webp') no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        /* Header Styling */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+
+        /* Left Logo Box */
+        .left {
+            display: flex;
+            align-items: center;
+        }
+
+        .left img {
+            width: 100px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .left div {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        /* Middle Navigation */
+        .navbar {
+            list-style: none;
+            display: flex;
+            padding: 0;
+            margin: 0;
+        }
+
+        .navbar li {
+            margin: 0 10px;
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px 15px;
+        }
+
+        .navbar li a:hover {
+            text-decoration: underline;
+            color: aqua;
+        }
+
+        /* Right Button Box */
+        .right {
+            display: flex;
+        }
+
+        .btn {
+            margin: 0 10px;
+            background-color: black;
+            color: white;
+            padding: 10px 20px;
+            border: 2px solid gray;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: aqua;
+            color: black;
+        }
+
+        /* Main Container */
+        .container {
+            border: 3px solid white;
+            margin: 50px auto;
+            padding: 30px;
+            width: 80%;
+            max-width: 500px;
+            background-color: rgba(0, 0, 0, 0.8);
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        .container h1 {
+            margin-bottom: 20px;
+        }
+
+        .form-group input  
+        {
+            text-align: center;
+            display: block;
+            width: 90%;
+            padding: 10px;
+            border: 2px solid gray;
+            margin: 15px auto;
+            font-size: 16px;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        
+
+        .container button {
+            display: block;
+            width: 50%;
+            margin: 20px auto;
+            padding: 10px;
+            font-size: 18px;
+            background-color: black;
+            color: white;
+            border: 2px solid gray;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .container button:hover {
+            background-color: aqua;
+            color: black;
+        }
+
+        /* Responsive Design */
+        @media screen and (max-width: 768px) {
+            .header {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .navbar {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .navbar li {
+                margin: 5px;
+            }
+
+            .btn {
+                margin: 10px 5px;
+            }
+
+            .container {
+                width: 90%;
+                padding: 20px;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .navbar li a {
+                font-size: 14px;
+            }
+
+            .btn {
+                font-size: 14px;
+                padding: 8px;
+            }
+
+            .container {
+                padding: 15px;
+            }
+
+            .form-group input {
+                font-size: 14px;
+            }
+
+            .container button {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <!-- Left box for logo -->
+        <div class="left">
+            <img src="b4116489-7262-4507-92a4-0176cb1cd7de.webp" alt="Gym Logo">
+            <div>Body Fitness</div>
+        </div>
+        <!-- Mid box for navigation -->
+        <ul class="navbar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#videos">Videos</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+        <!-- Right box for buttons -->
+        <div class="right">
+            <button class="btn">Email</button>
+            <button class="btn">Contact</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join Us for the Best Gym Experience</h1>
+        <form action="noaction.php">
+
+            
+            
+            <div class="form-group">
+                <input type="text" name="name" placeholder="Enter your Name">
+            </div>
+            
+            
+    
+            <div class="form-group">
+                <input type="date" class="form-control" id="age" placeholder="Enter your Age" required>
+            </div>
+            
+            <!-- <div class="form-group">
+                <input type="number" name="age" placeholder="Enter your Age">
+            </div>
+             -->
+            
+            
+            
+            
+            <!-- <div class="form-group">
+            <input type="gender" name="gender" placeholder="Enter your Gender">
+             -->
+            
+            
+            
+            
+            
+            
+            
+            
+            <div class="form-group">
+                <input type="text" class="form-control" id="name" placeholder="Enter your Name" required>
+            
+            </div>
+             
+            
+            
+            
+            
+            
+            
+            
+<!--             
+                <select class="form-group-input" id="gender" required >
+                    <option value=" disabled selected">Enter your Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+        
+            </select> -->
+
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
